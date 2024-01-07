@@ -1,0 +1,130 @@
+@charset "utf-8";
+.body{background-color:#008000;}
+.square1, .square2, #circle, .retrangle1, .retrangle2, .equal, #retrangle3 {
+	border: 3px solid #000;
+}
+.retrangle1 {
+	width: 100%;
+	height: 80px;
+	background-color: #808000;
+	border-bottom: 0px solid #000;
+	}
+.retrangle2 {
+	width: 100%;
+	height: 100%;
+	background-color: #008000;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+ 	}
+.container4{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.container1 {
+	margin-left: 80px;
+	margin-right: 80px;
+	margin-top: 80px;
+	rotate: 45deg;
+	width: 300px;
+	}
+.square1 {
+	width: 100px;
+	height: 100px;
+	background-color: #ff0000;
+	margin-bottom: 20px;
+	}
+.square2 {
+	width: 100px;
+	height: 100px;
+	background-color: #ff0000;	
+	}
+.container2{
+	margin: auto;
+	width:300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	}
+.equal {
+	width:130px;
+	height: 20px; 
+	background-color: #0000ff;	
+	position:relative;
+	margin-top: 20px;	
+	}
+.equal::after {
+	width:130px;
+	height: 20px; 
+	background-color: #0000ff;
+	position:absolute;
+	margin-bottom: 20px;
+	}
+#circle {
+	width: 115px;
+	height: 100px;
+	background-color: #008080;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.container3{
+	margin: 20px;
+	width: 205px;
+	float:right;
+	}
+#retrangle3{
+	background-color: #fff;
+	width: 205px;
+	height: 465px;
+	text-align: center;
+	font-size: xx-large;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+
+@media only screen and (min-width: 583px) and (max-width: 900px)  {
+.retrangle2 {
+	 display: grid;
+    grid-template-columns: 1fr lfr;
+ }
+.container1 {	
+	margin-left:80px;
+}
+.container2{
+	margin: 10px;
+	width:300px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+#retrangle3{
+	background-color: #c83737;
+	}
+.container4 {		
+	display: grid;
+    grid-template-columns: 1fr ;	
+}
+}
+		
+@media only screen and (max-width: 582px) {
+.retrangle2 {
+	   display: grid;
+    grid-template-columns: 1fr;
+  }
+.container1 {	
+	margin:80px auto; 
+}
+.container2 {	
+	margin:0 auto; 
+}
+.container3{
+	width: 270px;	
+}
+.container4 {
+	display: grid;
+    grid-template-columns: 1fr;	
+}
+#retrangle3{
+	background-color: #0000ff;
+	margin:0 auto; 
+	
+}
+}
+
+	
